@@ -1,0 +1,71 @@
+flight,from country ,from airport,from aiport name,from lattitude,from logntitude,to country ,to airport ,to aiport name,to lattitude,to logntitude,date,notes,trip name
+1,UK,Heathrow,LHR,51.4775,-0.461389,United States,Los Angeles,LAX,33.942536,-118.408075,01/08/2000,estimated date,Family United States 1
+2,United States,San Francisco,SFO,37.618972,-122.374889,UK,Heathrow,LHR,51.4775,-0.461389,15/08/2000,estimated date,Family United States 1
+3,UK,Heathrow,LHR,51.4775,-0.461389,United States,Boston,BOS,42.364347,-71.005181,01/08/2002,estimated date,Family United States 2
+4,United States,Boston,BOS,42.364347,-71.005181,UK,Heathrow,LHR,51.4775,-0.461389,12/08/2002,estimated date,Family United States 2
+5,UK,Heathrow,LHR,51.4775,-0.461389,United States,Los Angeles,LAX,33.942536,-118.408075,01/08/2004,estimated date,Family United States 3
+6,United States,Los Angeles,LAX,33.942536,-118.408075,UK,Heathrow,LHR,51.4775,-0.461389,15/08/2004,estimated date,Family United States 3
+7,UK,Heathrow,LHR,51.4775,-0.461389,United States,Chicago,ORD,41.978603,-87.904842,22/10/2004,estimated date,Aunty Jill United States trip
+8,United States,Chicago,ORD,41.978603,-87.904842,UK,Heathrow,LHR,51.4775,-0.461389,29/10/2004,estimated date,Aunty Jill United States trip
+9,UK,Luton,LTN,51.874722,-0.368333,Switzerland,Geneva,GVA,46.238064,6.10895,01/04/2007,estimated date,Avoriaz
+10,Switzerland,Geneva,GVA,46.238064,6.10895,UK,Luton,LTN,51.874722,-0.368333,08/04/2007,estimated date,Avoriaz
+11,UK,Luton,LTN,51.874722,-0.368333,Cyprus,Pathos,AOK,35.421408,27.146008,01/08/2008,estimated date,Family Cyprus
+12,Cyprus,Pathos,AOK,35.421408,27.146008,UK,Luton,LTN,51.874722,-0.368333,15/08/2008,estimated date,Family Cyprus
+13,UK,Heathrow,LHR,51.4775,-0.461389,India,Bombay,BOM,19.088686,72.867919,16/08/2008,Via Bombay,Family Thailand 1
+14,India ,Bombay,BOM,19.088686,72.867919,Thailand,Bangkok,BKK,13.681108,100.747283,16/08/2008,Via Bombay,Family Thailand 1
+15,Thailand,Bangkok,BKK,13.681108,100.747283,Thailand,PhUKet,HKT,8.1132,98.316872,23/08/2008,,Family Thailand 1
+16,Thailand,PhUKet,HKT,8.1132,98.316872,Thailand,Bangkok,BKK,13.681108,100.747283,27/08/2008,,Family Thailand 1
+17,Thailand,Bangkok,BKK,13.681108,100.747283,UK,Heathrow,LHR,51.4775,-0.461389,29/08/2008,,Family Thailand 1
+18,UK,Luton,LTN,51.874722,-0.368333,Greece,Zakynthos,ZTH,37.750853,20.88425,03/07/2010,estimated date and aiports,Zante
+19,Greece,Zakynthos,ZTH,37.750853,20.88425,UK,Luton,LTN,51.874722,-0.368333,10/07/2010,estimated date and aiports,Zante
+20,UK,Luton,LTN,51.874722,-0.368333,Portugal,Lisbon,LIS,38.781311,-9.135919,09/04/2011,estimated date,Portugal Surfing
+21,Portugal,Lisbon,LIS,38.781311,-9.135919,UK,Luton,LTN,51.874722,-0.368333,16/04/2011,estimated date,Portugal Surfing
+22,UK,Stansted,STN,51.885,0.235,Italy,Verona,,45.472017,10.927919,17/04/2011,estimated date and aiports,Mantrowva 2011
+23,Italy,Verona,,45.472017,10.927919,UK,Stansted,STN,51.885,0.235,23/04/2011,estimated date and aiports,Mantrowva 2011
+24,UK,Stansted,STN,51.885,0.235,Italy,Verona,,45.472017,10.927919,01/04/2012,estimated date and aiports,Mantrowva 2012
+25,Italy,Verona,,45.472017,10.927919,UK,Stansted,STN,51.885,0.235,07/04/2012,estimated date and aiports,Mantrowva 2012
+26,UK,Luton,LTN,51.874722,-0.368333,Portugal,Lisbon,LIS,38.781311,-9.135919,02/07/2012,estimated date,Portugal with Rich and Claire
+27,Portugal,Lisbon,LIS,38.781311,-9.135919,UK,Luton,LTN,51.874722,-0.368333,08/07/2012,estimated date,Portugal with Rich and Claire
+28,UK,Birmingham,BHX,52.453856,-1.748028,France,Nantes,NTE,47.153189,-1.610725,10/07/2012,estimated date and aiports,Beganne
+29,France,Nantes,NTE,47.153189,-1.610725,UK,Birmingham,BHX,52.453856,-1.748028,15/07/2012,estimated date and aiports,Beganne
+30,UK,Stansted,STN,51.885,0.235,Spain,Sevilla,SVQ,37.418,-5.893106,23/09/2012,,"Mum, Dad, me seville 3rd year"
+31,Spain,Sevilla,SVQ,37.418,-5.893106,UK,Stansted,STN,51.885,0.235,30/09/2012,,"Mum, Dad, me seville 3rd year"
+32,UK,Heathrow,LHR,51.4775,-0.461389,Spain,Madrid,MAD,40.493556,-3.566764,01/07/2013,via madrid,Matt and Si Trip
+33,Spain,Madrid,MAD,40.493556,-3.566764,Brazil,Rio De Janeiro,STU,-22.93235,-43.719092,01/07/2013,via madrid,Matt and Si Trip
+34,Brazil,Rio De Janeiro,STU,-22.93235,-43.719092,Peru,Lima,LIM,-12.021889,-77.114319,07/07/2013,,Matt and Si Trip
+35,Bolivia,La Paz,LPB,-16.513339,-68.192256,Peru,Lima,LIM,-12.021889,-77.114319,04/08/2013,,Matt and Si Trip
+36,Peru,Lima,LIM,-12.021889,-77.114319,Spain,Madrid,MAD,40.493556,-3.566764,04/08/2013,via madrid,Matt and Si Trip
+37,Spain,Madrid,MAD,40.493556,-3.566764,UK,Heathrow,LHR,51.4775,-0.461389,04/08/2013,via madrid,Matt and Si Trip
+38,UK,Stansted,STN,51.885,0.235,Poland,Krakow,KRK,50.077731,19.784836,15/08/2013,,Polslovgary end of 3rd year
+39,Hungary,Budapest,BUD,47.436933,19.255592,UK,Stansted,STN,51.885,0.235,28/08/2013,,Polslovgary end of 3rd year
+40,UK,Luton,LTN,51.874722,-0.368333,Greece,Rhodos,RHO,36.405419,28.086192,12/09/2013,estimated date and aiports,Family Rhodes
+41,Greece,Rhodos,RHO,36.405419,28.086192,UK,Luton,LTN,51.874722,-0.368333,19/09/2013,estimated date and aiports,Family Rhodes
+42,UK,Heathrow,LHR,51.4775,-0.461389,United States,New York,JFK,40.639751,-73.778925,31/07/2014,,Finals United States Trip
+43,United States,Washington,DCA,38.852083,-77.037722,United States,Charleston,CHS,32.898647,-80.040528,14/08/2014,,Finals United States Trip
+44,United States,Raleigh-durham,RDU,35.877639,-78.787472,United States,Atlanta,ATL,33.636719,-84.428067,26/08/2014,Via Atlanta,Finals United States Trip
+45,United States,Atlanta,ATL,33.636719,-84.428067,UK,Heathrow,LHR,51.4775,-0.461389,26/08/2014,Via Atlanta,Finals United States Trip
+46,UK,Stansted,STN,51.885,0.235,Ireland,Dublin,DUB,53.421333,-6.270075,20/11/2014,,Lattice Dublin
+47,Ireland,Dublin,DUB,53.421333,-6.270075,UK,Stansted,STN,51.885,0.235,24/11/2014,,Lattice Dublin
+48,UK,Luton,LTN,51.874722,-0.368333,Germany,Berlin Schonefeld,SXF,52.380001,13.5225,22/01/2015,,Silke Trip
+49,Germany,Berlin Schonefeld,SXF,52.380001,13.5225,UK,Stansted,STN,51.885,0.235,25/01/2015,,Silke Trip
+50,UK,Gatwick,LGW,51.148056,-0.190278,Spain,Barcelona,BCN,41.297078,2.078464,09/05/2015,,"Stan, Zo and Si Cycle"
+51,France,Toulouse,TLS,43.629075,1.363819,UK,Luton,LTN,51.874722,-0.368333,16/05/2015,,"Stan, Zo and Si Cycle"
+52,UK,Luton,LTN,51.874722,-0.368333,Slovenia,Ljubliana,LJU,46.223686,14.457611,12/09/2015,,Slovatia
+53,Croatia,Zagreb,ZAG,45.742931,16.068778,Serbia,Beograd,BEG,44.818444,20.309139,19/09/2015,Via belgrade,Slovatia
+54,Serbia,Beograd,BEG,44.818444,20.309139,UK,Heathrow,LHR,51.4775,-0.461389,19/09/2015,Via belgrade,Slovatia
+55,UK,Heathrow,LHR,51.4775,-0.461389,Turkey,Istanbul,IST,40.976922,28.814606,19/11/2015,,Lattice Turkey
+56,Turkey,Istanbul,IST,40.976922,28.814606,UK,Gatwick,LGW,51.148056,-0.190278,22/11/2015,,Lattice Turkey
+57,UK,Heathrow,LHR,51.4775,-0.461389,India,Bangalore,BLR,12.949986,77.668206,09/01/2016,,India with Work
+58,India ,Bangalore,BLR,12.949986,77.668206,India,Delhi,DEL,28.5665,77.103088,30/01/2016,via Dehli,India with Work
+59,India ,Delhi,DEL,28.5665,77.103088,UK,Heathrow,LHR,51.4775,-0.461389,30/01/2016,via Dehli,India with Work
+60,Germany ,Berlin Schonefeld,SXF,52.380001,13.5225,UK,Luton,LTN,51.874722,-0.368333,04/03/2016,,Richard's Stag
+61,UK,Luton,LTN,51.874722,-0.368333,Germany,Berlin Schonefeld,SXF,52.380001,13.5225,06/03/2016,,Richard's Stag
+62,UK,Gatwick,LGW,51.148056,-0.190278,Germany,Hamburg,HAM,53.630389,9.988228,17/04/2016,,Teradata Conference
+63,Germany,Hamburg,HAM,53.630389,9.988228,UK,Gatwick,LGW,51.148056,-0.190278,20/04/2016,,Teradata Conference
+64,UK,Stansted,STN,51.885,0.235,Greece,Athens,ATH,37.936358,23.944467,18/06/2016,,The Big Sail
+65,Greece,Athens,ATH,37.936358,23.944467,UK,Stansted,STN,51.885,0.235,25/06/2016,,The Big Sail
+66,UK,Luton,LTN,51.874722,-0.368333,Poland ,Gdansk,GDN,54.377569,18.466222,28/06/2016,,Lattice Open'r
+67,Poland ,Gdansk,GDN,54.377569,18.466222,UK,Luton,LTN,51.874722,-0.368333,03/07/2016,,Lattice Open'r
+68,UK,Heathrow,LHR,51.4775,-0.461389,Thailand,Bangkok,BKK,13.681108,100.747283,21/08/2016,,Thailand with Work
+69,Thailand,Bangkok,BKK,13.681108,100.747283,Cambodia,Siem-reap,REP,13.410666,103.81284,15/09/2016,,Family Camobia 1
+70,Cambodia,Siem-reap,REP,13.410666,103.81284,Thailand ,Bangkok,BKK,13.681108,100.747283,18/09/2016,,Family Camobia 1
