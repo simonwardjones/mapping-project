@@ -69,3 +69,10 @@ flight,from country ,from airport,from aiport name,from lattitude,from logntitud
 68,UK,Heathrow,LHR,51.4775,-0.461389,Thailand,Bangkok,BKK,13.681108,100.747283,21/08/2016,,Thailand with Work
 69,Thailand,Bangkok,BKK,13.681108,100.747283,Cambodia,Siem-reap,REP,13.410666,103.81284,15/09/2016,,Family Camobia 1
 70,Cambodia,Siem-reap,REP,13.410666,103.81284,Thailand ,Bangkok,BKK,13.681108,100.747283,18/09/2016,,Family Camobia 1
+71,Thailand ,Bangkok,DMK,13.912583,100.60675,Thailand,PhUKet,HKT,8.1132,98.316872,18/10/2016,,Issie Island trip
+72,Thailand,PhUKet,HKT,8.1132,98.316872,Thailand ,Bangkok,DMK,13.912583,100.60675,22/10/2016,,Issie Island trip
+73,Thailand,Bangkok,BKK,13.681108,100.747283,UK,Heathrow,LHR,51.4775,-0.461389,02/12/2016,,Home from Thailand
+74,UK,Heathrow,LHR,51.4775,-0.461389,USA,Detroit,DTW,42.212444,-83.353389,10/12/2016,via detroit,Alex/Al Skiing trip
+75,USA,Detroit,DTW,42.212444,-83.353389,USA,Denver,DEN,39.861656,-104.673178,10/12/2016,via detroit,Alex/Al Skiing trip
+76,USA,Denver,DEN,39.861656,-104.673178,USA,Salt Lake City,SLC,40.788389,-111.977772,20/12/2016,via salt lake city,Alex/Al Skiing trip
+77,USA,Salt Lake City,SLC,40.788389,-111.977772,UK,Heathrow,LHR,51.4775,-0.461389,20/12/2016,via salt lake city,Alex/Al Skiing trip
