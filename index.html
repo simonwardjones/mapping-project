@@ -1,2 +1,66 @@
-<h1>Simon's Website</h1>
-<a href ='about.html'>Find out about him</a>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mapping Project</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme --> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Using a prettify java script CDN -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+	<style> li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
+		list-style-type: decimal !important;
+	}
+	</style>
+</head>
+
+<body id="preview">
+<div class="container">
+	<div class= "row">
+		<div class="col-xs-12 col-md-8">
+			<h1><a id="Mapping_Project"></a>Mapping Project</h1>
+			<p>Watching a film the other day, Indiana jones if you’re curious, I decided I wanted to make a map animation showing all the flights I had ever taken. Admittedly not my idea, just Inspired by the time compression map montage in the film.</p>
+			<p>I decided to use this as an excuse to get more familiar with the python coding language. First and by far the most tricky part was remembering all the flights I have taken! Once that was done and in a csv it was on to the coding. I decided I use, and would recommend using Jupyter notebook, especially when relatively new to python as it separates code and outputs serially making it easy to read and explore.</p>
+			<p>Eventually my mini project broke down into three sections. Look below for more detail but broadly it was:</p>
+			<ol>
+				<li>Getting the data into python (I used a pandas data frame)</li>
+				<li>Creating the map image and flight paths ( this was made incredibly easy using the matplot lib package)</li>
+				<li>Animating. ( Again this was a simple using the animation package)</li>
+				<li>Using xxxx to make a pretty version for the web.</li>
+			</ol>
+			<p>For those that love the detail<br>
+			Etc etc.<br></p>
+			<p>As a relatively new comer to python I thought it was going to be a lot harder than it was!</p>
+			<p>I still don’t think the image quality in the video is quite as good as I would have hoped. There are plenty of other ideas I have to make this even better: adding in some element of real time, perhaps countries filling in as they are visited. The other idea was to include carbon emissions or perhaps more positively how much money you’d have to give to charity to offset the carbon…</p>
+			<h2><a id="Hope_you_like_it__22"></a>Hope you like it !</h2>
+			<p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+			To edit settings...</p>
+			<pre class="prettyprint linenums"><code class= "language-py">n1 = 1
+n2 = 2
+even_sum = 2
+# Constantly consider two values in the sequence
+while max(n1,n2) < 4000000:
+    n1 = n1 + n2
+    if n1 % 2 == 0:
+        even_sum = even_sum + n1
+    if n1 > 4000000:
+        break
+    n2 = n1 + n2
+    if n2 % 2 == 0:
+        even_sum = even_sum + n2
+
+print(even_sum)
+			</code></pre>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
