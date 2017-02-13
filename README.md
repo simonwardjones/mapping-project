@@ -1,12 +1,9 @@
-# mapping-project
-Using python matplot lib library to explore mapping
+# Mapping-Project
 
-
-Hi Paul,
-
-this is my mapping project.
+Using Python matplot lib library to explore mapping
 
 pre requisties:
 
-- installed python
-- installed ipython notebook
+- Installed python (Now using Python 3.6)
+- Installed jupyter notebook
+- To save needing to install ffmpeg (movie writer ) I have included executable (version: 20170204-b1e2192)

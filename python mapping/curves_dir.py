@@ -2,7 +2,7 @@
 import math
 import os
 cwd = os.getcwd()
-print cwd
+print (cwd)
 
 def tweensegs(longitude1,latitude1,longitude2,latitude2,num_of_segments):
 
