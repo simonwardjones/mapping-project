@@ -77,32 +77,178 @@
 			<p>Eventually my mini project broke down into three sections. Look below for more detail but broadly it was:</p>
 			<ol>
 				<li>Getting the data into python (I used a pandas data frame)</li>
-				<li>Creating the map image and flight paths ( this was made incredibly easy using the matplot lib package)</li>
-				<li>Animating. ( Again this was a simple using the animation package)</li>
+				<li>Creating the map image and flight paths ( this was made incredibly easy using the matplot lib basemap library)</li>
+				<li>Animating ( this was a relatively simple using the animation package)</li>
 			</ol>
-			<p>For those that love the detail<br>
-			Etc etc.<br></p>
+			<p>For those that love the detail the code used is below</p>
 			<p>As a relatively new comer to python I thought it was going to be a lot harder than it was!</p>
 			<p>I still don’t think the image quality in the video is quite as good as I would have hoped. There are plenty of other ideas I have to make this even better: adding in some element of real time, perhaps countries filling in as they are visited. The other idea was to include carbon emissions or perhaps more positively how much money you’d have to give to charity to offset the carbon…</p>
-			<h2><a id="Hope_you_like_it__22"></a>Hope you like it !</h2>
-			<p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-			To edit settings...</p>
-			<pre class="prettyprint linenums"><code class= "language-py">n1 = 1
-n2 = 2
-even_sum = 2
-# Constantly consider two values in the sequence
-while max(n1,n2) < 4000000:
-    n1 = n1 + n2
-    if n1 % 2 == 0:
-        even_sum = even_sum + n1
-    if n1 > 4000000:
-        break
-    n2 = n1 + n2
-    if n2 % 2 == 0:
-        even_sum = even_sum + n2
+			<h2>Hope you like it !</h2>
+      <div class="embed-responsive embed-responsive-4by3">
+      <video controls class="embed-responsive-item" onclick="this.paused ? this.play() : this.pause();">
+      <source src=".//images//mapping_video.mp4" type="video/mp4">
+      <source src=".//images//mapping_video_ios.mp4" type="video/mp4">
+      </video>
+      </div>
+      <br>
+			<h2>Here is the code </h2>
 
-print(even_sum)
+			<h3>Bringing in the required packages</h3>
+			<pre class="prettyprint linenums"><code class= "language-py">import pandas as 
+import numpy as np
+from mpl_toolkits.basemap import Basemap
+import matplotlib.pyplot as plt
+import os
+import matplotlib.animation as animation
+from matplotlib.lines import Line2D
+​
+import os
+cwd = os.getcwd()
+ffmpeg_path = cwd + '\\ffmpeg-20170204-b1e2192-win64-static\\bin'
+plt.rcParams['animation.ffmpeg_path'] = ffmpeg_path + '\\ffmpeg.exe'
+plt.rcParams['animation.writer'] = 'ffmpeg_file'
 			</code></pre>
+
+      <h3>Sort the filenames/Directories out</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">import os
+cwd = os.getcwd()
+print(cwd)
+in_filename = cwd + '\Data\SW-J flight travel.csv'
+print(in_filename)
+      </code></pre>
+
+      <h3>Load the data in</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">
+csv_cols = ('flight', 'dep_coutry', 'dep_airport','dep_airport_code','dep_lat','dep_lon',
+                'arr_country','arr_airport','arr_airport_code','arr_lat','arr_lon',
+                'date', 'notes','trip_name')
+​
+routes = pd.read_csv(in_filename,names= csv_cols, skiprows=1)
+routes.head(2)
+      </code></pre>
+
+      <h3>Colour set up</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">bg_color = (0.0, 0.0, 0, 1.0)
+coast_color = (204/255.0, 0, 193/255.0, .9)
+color = (1.0, 0.80000000000000004, 0.90196078431372551, 1.0)
+      </code></pre>
+
+      <h3>Set initial conditions</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">fig = plt.figure(figsize=(27,20))
+fig.subplots_adjust(left=0.05, bottom=0.05, right=0.95, top=0.95, wspace=None, hspace=None)
+m = Basemap(projection='mill', lon_0=0, resolution= 'l') 
+m.drawcoastlines(color=coast_color, linewidth=2.5)
+m.fillcontinents(color=bg_color, lake_color=bg_color)
+m.drawmapboundary(fill_color=bg_color)
+lines = []
+      </code></pre>
+
+      <h3>Populate the lines list</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">for i, route in enumerate(routes.sort_values(by='flight',
+                              ascending=True).iterrows()):
+    route = route[1]
+    line, = m.drawgreatcircle(route['dep_lon'], route['dep_lat'],
+                                  route['arr_lon'], route['arr_lat'],
+                                  linewidth=2.5, color= color)
+    lines.append(line)
+      </code></pre>
+
+      <h3>"lines" now contains our flight paths so let's set up the animation figure</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">fig2 = plt.figure(figsize=(27,20))
+fig2.subplots_adjust(left=0.05, bottom=0.05, right=0.95, top=0.95, wspace=None, hspace=None)
+m2 = Basemap(projection='mill', lon_0=0, resolution= 'l')
+m2.drawcoastlines(color=coast_color, linewidth=2.5)
+m2.fillcontinents(color=bg_color, lake_color=bg_color)
+m2.drawmapboundary(fill_color=bg_color)
+      </code></pre>
+
+      <h3>Initialise the flight path</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">current_line = 0
+current_point = 0
+x,y = lines[current_line].get_data()
+x= x[0]
+y= y[0]
+flight_path = [[],[],[]]
+for i in iter(range(len(lines))):
+        line = m2.plot(x,y, color=color)[0]
+        line_head = m2.plot(x,y, color='red', marker='o', markeredgecolor='r')[0]
+        line_head_slice = m2.plot(x,y, color='red', linewidth=2.5)[0]
+        line.set_data(x, y)
+        flight_path[0].append(line)
+        flight_path[1].append(line_head)           #head
+        flight_path[2].append(line_head_slice)     #head slice
+      </code></pre>  
+
+      <h3>Define Init to be used if repeat set to true</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">def init():
+    global  current_line , current_point, flight_path
+    current_line = 0
+    current_point = 0
+    x,y = lines[current_line].get_data()
+    x= x[0]
+    y= y[0]
+    for i in iter(range(len(lines))):
+        flight_path[0][i].set_data(x,y)
+        flight_path[1][i].set_data(x,y)       #head
+        flight_path[2][i].set_data(x,y)    #head slice
+    return flight_path[0] + flight_path[1] + flight_path[2]
+      </code></pre> 
+
+      <h3>Calclulate how many frames do we need</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">s=0
+for i in range(len(lines)):
+    s += len(lines[i].get_data()[0])
+print ('frame count = ' + str(s))
+      </code></pre> 
+
+      <h3>Define the animation function</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">def animate(frames):
+#def animate(frames, *args, **kwargs):
+    global  current_line , current_point, flight_path, lines,r
+    head_len = 10
+    x,y = lines[current_line].get_data()
+    
+    flight_path[0][current_line].set_data(x[:current_point+1],y[:current_point+1])
+    flight_path[1][current_line].set_data(x[current_point],y[current_point])
+    if (current_point < 10):
+        
+        flight_path[2][current_line].set_data(x[:current_point+1],y[:current_point+1])
+        
+    if (current_point > 9):
+        flight_path[2][current_line].set_data(x[(current_point-head_len):current_point],
+                                              y[(current_point-head_len):current_point])    
+        
+    
+    if (current_point == lines[current_line].get_data()[0].size -1):
+        
+        current_point = 0
+        flight_path[2][current_line].set_data([],[])
+        current_line += 1
+        
+    else:
+        current_point += 1   
+
+    return flight_path[0] + flight_path[1] + flight_path[2]
+      </code></pre> 
+
+      <h3>Call the animator</h3>
+      <pre class="prettyprint linenums"><code class= "language-py">anim = animation.FuncAnimation(fig2, animate, frames= s-1,
+                               blit=True,
+                               init_func=init, 
+                               repeat= False)
+      </code></pre> 
+
+      <h3>Save the animation</h3>
+      <pre class="prettyprint linenums"><code class= "language-py"># saves the video
+from matplotlib.animation import writers
+Writer = writers['ffmpeg']
+writer = Writer(fps=120, metadata=dict(artist='SW-J'), bitrate=1800, extra_args=['-vcodec', 'libx264'])
+writer_ios = Writer(fps=30, metadata=dict(artist='SW-J'),extra_args=['-vcodec', 'libx264','-vf', "scale=-2:720:flags=lanczos"])
+#anim.save('mapping_video_ios.mp4', writer=writer_ios)
+#anim.save('mapping_video.mp4',writer=writer)
+      </code></pre> 
+
+
 		</div>
 	</div>
 </div>
