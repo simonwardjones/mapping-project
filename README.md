@@ -6,4 +6,13 @@ pre requisties:
 
 - Installed python (Now using Python 3.6)
 - Installed jupyter notebook
-- To save needing to install ffmpeg (movie writer ) I have included executable (version: 20170204-b1e2192)
+- Install basemap:
+
+conda install -c conda-forge basemap
+conda install -c conda-forge basemap-data-hires
+
+- Install ffmpeg
+
+conda install -c conda-forge ffmpeg
+
+

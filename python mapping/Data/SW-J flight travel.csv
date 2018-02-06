@@ -1,4 +1,4 @@
-flight,from country ,from airport,from aiport name,from lattitude,from logntitude,to country ,to airport ,to aiport name,to lattitude,to logntitude,date,notes,trip name
+﻿flight,from country ,from airport,from aiport name,from lattitude,from logntitude,to country ,to airport ,to aiport name,to lattitude,to logntitude,date,notes,trip name
 1,UK,Heathrow,LHR,51.4775,-0.461389,United States,Los Angeles,LAX,33.942536,-118.408075,01/08/2000,estimated date,Family United States 1
 2,United States,San Francisco,SFO,37.618972,-122.374889,UK,Heathrow,LHR,51.4775,-0.461389,15/08/2000,estimated date,Family United States 1
 3,UK,Heathrow,LHR,51.4775,-0.461389,United States,Boston,BOS,42.364347,-71.005181,01/08/2002,estimated date,Family United States 2
@@ -76,3 +76,11 @@ flight,from country ,from airport,from aiport name,from lattitude,from logntitud
 75,USA,Detroit,DTW,42.212444,-83.353389,USA,Denver,DEN,39.861656,-104.673178,10/12/2016,via detroit,Alex/Al Skiing trip
 76,USA,Denver,DEN,39.861656,-104.673178,USA,Salt Lake City,SLC,40.788389,-111.977772,20/12/2016,via salt lake city,Alex/Al Skiing trip
 77,USA,Salt Lake City,SLC,40.788389,-111.977772,UK,Heathrow,LHR,51.4775,-0.461389,20/12/2016,via salt lake city,Alex/Al Skiing trip
+78,UK,Heathrow,LHR,51.4775,-0.461389,Thailand,Bangkok,BKK,13.681108,100.747283,19/02/2017,,Thailand with work 2
+79,Thailand ,Bangkok,DMK,13.912583,100.60675,Malaysia,Kuala Lumpa,KUL,2.745578,101.709917,04/03/2017,,Melaysia with Luke
+80,Malaysia,Kuala Lumpa,KUL,2.745578,101.709917,Thailand ,Bangkok,DMK,13.912583,100.60675,05/03/2017,,Melaysia with Luke
+81,Thailand,Bangkok,BKK,13.681108,100.747283,UK,Heathrow,LHR,51.4775,-0.461389,22/03/2017,,Home from Thailand
+82,UK,Stansted,STN,51.885,0.235,Italy,Rome,CIA,41.799361,12.594936,25/05/2017,,Rome with Issie
+83,Italy,Rome,CIA,41.799361,12.594936,UK,Stansted,STN,51.885,0.235,29/05/2017,,Rome with Issie
+84,UK,Gatwick,LGW,51.148056,-0.190278,Canada,Toronto,YYZ,43.677223,-79.630556,06/10/2017,,Detroit to see Jacob
+85,Canada,Toronto,YYZ,43.677223,-79.630556,UK,Gatwick,LGW,51.148056,-0.190278,15/10/2017,,Detroit to see Jacob
