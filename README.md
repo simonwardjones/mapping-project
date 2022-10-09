@@ -1,18 +1,13 @@
 # Mapping-Project
 
-Using Python matplot lib library to explore mapping
+Exploring my flight history.
 
-pre requisties:
+## History
 
-- Installed python (Now using Python 3.6)
-- Installed jupyter notebook
-- Install basemap:
-
-conda install -c conda-forge basemap
-conda install -c conda-forge basemap-data-hires
-
-- Install ffmpeg
-
-conda install -c conda-forge ffmpeg
+This project started on 24/09/16 and originally was built using matplotlib with basemap.
 
 
+## Installation
+
+ - Python >=3.10
+ - Poetry (version 1.2.1) for package management
