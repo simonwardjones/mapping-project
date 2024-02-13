@@ -1,4 +1,4 @@
-﻿flight,from country ,from airport,from aiport name,from lattitude,from logntitude,to country ,to airport ,to aiport name,to lattitude,to logntitude,date,notes,trip name,Airline
+flight,from country ,from airport,from aiport name,from lattitude,from logntitude,to country ,to airport ,to aiport name,to lattitude,to logntitude,date,notes,trip name,Airline
 1,UK,Heathrow,LHR,51.477500,-0.461389,United States,Los Angeles,LAX,33.94,-118.41,01/08/2000,estimated date,Family United States 1,
 2,United States,San Francisco,SFO,37.618972,-122.374889,UK,Heathrow,LHR,51.48,-0.46,15/08/2000,estimated date,Family United States 1,
 3,UK,Heathrow,LHR,51.477500,-0.461389,United States,Boston,BOS,42.36,-71.01,01/08/2002,estimated date,Family United States 2,
@@ -130,3 +130,5 @@
 129,Bahrain,Bahrain,BAH,26.270834,50.633610,UK,Heathrow,LHR,51.48,-0.46,28/05/2023,Via Bahrain,Honeymoon,Gulf Air
 130,UK,Luton,LTN,51.874722,-0.368333,Greece,Thessaloniki,SKG,40.52,22.97,01/06/2023,,Alex’s Stag,Wizz air
 131,Greece,Thessaloniki,SKG,40.519725,22.970950,UK,Stansted,STN,51.89,0.24,05/06/2023,,Alex’s Stag,Ryan Air
+132,UK,Gatwick,LGW,51.148056,-0.190278,Italy,Torino,TRN,45.20,7.65,27/01/2024,,Skiing with Al and Alex,British Airways
+133,Italy,Torino,TRN,45.20,7.65,UK,Gatwick,LGW,51.148056,-0.190278,03/02/2024,,Skiing with Al and Alex,British Airways
