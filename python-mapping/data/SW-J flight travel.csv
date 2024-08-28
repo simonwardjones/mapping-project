@@ -132,3 +132,9 @@ flight,from country ,from airport,from aiport name,from lattitude,from logntitud
 131,Greece,Thessaloniki,SKG,40.519725,22.970950,UK,Stansted,STN,51.89,0.24,05/06/2023,,Alex’s Stag,Ryan Air
 132,UK,Gatwick,LGW,51.148056,-0.190278,Italy,Torino,TRN,45.20,7.65,27/01/2024,,Skiing with Al and Alex,British Airways
 133,Italy,Torino,TRN,45.20,7.65,UK,Gatwick,LGW,51.148056,-0.190278,03/02/2024,,Skiing with Al and Alex,British Airways
+134,UK,Heathrow,LHR,51.477500,-0.461389,USA,New York,JFK,40.64,-73.78,28/03/2024,,Issie and Simon NYC trip,American Airlines
+135,USA,New York,JFK,40.64,-73.78,UK,Heathrow,LHR,51.48,-0.46,01/04/2024,,Issie and Simon NYC trip,British Airways
+136,UK,Gatwick,LGW,51.148056,-0.190278,Italy,Florence,FLR,43.78,11.25,15/06/2024,,Darcy Trip to florence,Vueling
+137,Italy,Florence,FLR,43.78,11.25,UK,Gatwick,LGW,51.148056,-0.190278,22/06/2024,,Darcy Trip to florence,Vueling
+138,UK,Heathrow,LHR,51.477500,-0.461389,Portugal,Lisbon,LIS,38.781311,-9.135919,16/08/2024,,Romilly and Rob’s wedding,Tap
+139,Portugal,Lisbon,LIS,38.781311,-9.135919,UK,Heathrow,LHR,51.477500,-0.461389,18/08/2024,,Romilly and Rob’s wedding,Tap
